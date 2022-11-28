@@ -4,6 +4,8 @@
 
 
 $(function () {
+  // This section of code defines the objects in my html that will display my current day
+  // I have decided to use jQuery to help consolidate my code and make it more accesible
 var day = $('#currentDay');
 var now = dayjs();
 var longDate = now.$d;
@@ -15,15 +17,20 @@ var hour = dayjs().hour();
     // time-block containing the button that was clicked? How might the id be
     // useful when saving the description in local storage?
 day.text(longDate);
+// Below is an array that holds the hours of a work shift
+// This allows us to implent the array into a jQuery for loop
 var workHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
-
+// The for loop below continuously pulls every ID from the html document
+// and assigns it to a value for a time section an button value.
 $.each(workHours, function(i, num){
 let rowId = $('#hour-' + num);
 let note = $('#note-' + num);
 let btn = $('#btn-' + num);
-
+// This takes the pulled button value and helps let the listner know what is 
+// being targeted and triggers the save event.
 btn.click(function(){saveEvent(num)});
-
+// This helps us figure out what the current time of day is an assignt the propper
+// css design to each section.
 if (num === hour) {
   rowId.addClass('present');
 }else if (num < hour) {
@@ -31,9 +38,11 @@ if (num === hour) {
 }else{
   rowId.addClass('future');
 }
+// This pulls the stores the entered text.
 note.text(localStorage.getItem('data-' + num));
 })
 
+//this function displays the saved text
 function saveEvent(event) {
   let note = document.getElementById('note-' + event).value;
   localStorage.setItem('data-' + event, note);
