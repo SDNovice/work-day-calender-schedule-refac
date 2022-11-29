@@ -16,6 +16,8 @@ Screen Shot 2022-11-27 at 6.36.23 PM.png
 Screen Shot 2022-11-28 at 1.28.45 PM.png
 Screen Shot 2022-11-28 at 1.28.51 PM.png
 
+screenshots failed to upload please refer to the images folder
+
 ## Usage
 To use this web application click a desired hour and enter an event into the textbox.
 click the save button of the hour you put the event in and refresh the page and it 
