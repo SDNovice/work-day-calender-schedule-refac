@@ -8,6 +8,14 @@ displayed. As a result I used a jQuery method of Day.js() to continuously pull o
 time as well assigned IDs to each hour and ran them through a for loop to pull any event
 set in the given hour. Most if not all my code has been written with jQuery.
 
+Screen Shot 2022-11-27 at 6.35.34 PM.png
+Screen Shot 2022-11-27 at 6.35.41 PM.png
+Screen Shot 2022-11-27 at 6.35.51 PM.png
+Screen Shot 2022-11-27 at 6.35.56 PM.png
+Screen Shot 2022-11-27 at 6.36.23 PM.png
+Screen Shot 2022-11-28 at 1.28.45 PM.png
+Screen Shot 2022-11-28 at 1.28.51 PM.png
+
 ## Usage
 To use this web application click a desired hour and enter an event into the textbox.
 click the save button of the hour you put the event in and refresh the page and it 
